@@ -2,8 +2,10 @@
 import { useState, useEffect } from "react";
 import ResearchOptions from "./ResearchOptions";
 import ResearchProjects from "./ResearchProjects";
-import availableOptions from "./availableOptions";
-const version = "1.0";
+import availableOptions from "./availableOptions.json";
+import SpecialOptions from "./SpecialOptions";
+
+const version = "1.2";
 
 const getStoredOptions = () => {
   let storedVersion = localStorage.getItem("azur_version");
@@ -21,12 +23,34 @@ const getStoredOptions = () => {
   }
 };
 
+const getSpecialOptions = () => {
+  let storedVersion = localStorage.getItem("azur_version");
+  let storedSpOptions = localStorage.getItem("azur_sp_options");
+  if (storedVersion && storedSpOptions) {
+    storedSpOptions = JSON.parse(localStorage.getItem("azur_sp_options"));
+    if (storedVersion === version) {
+      return storedSpOptions;
+    } else {
+      localStorage.removeItem("azur_sp_options");
+      return {
+        priority: Array(6).fill("0"),
+      };
+    }
+  } else {
+    return { priority: Array(6).fill("0") };
+  }
+};
+
 function App() {
-  const [options, setOptions] = useState(getStoredOptions);
+  const [options, setOptions] = useState(getStoredOptions());
+  const [specialOptions, setSpecialOptions] = useState(getSpecialOptions());
+
   useEffect(() => {
     localStorage.setItem("azur_version", version);
     localStorage.setItem("azur_options", JSON.stringify(options));
-  }, [options]);
+    localStorage.setItem("azur_sp_options", JSON.stringify(specialOptions));
+  }, [options, specialOptions]);
+
   return (
     <div className="App">
       <header className="App-header">
@@ -35,7 +59,11 @@ function App() {
         </h1>
       </header>
       <ResearchOptions options={options} setOptions={setOptions} />
-      <ResearchProjects options={options} />
+      <SpecialOptions
+        specialOptions={specialOptions}
+        setSpecialOptions={setSpecialOptions}
+      />
+      <ResearchProjects options={options} specialOptions={specialOptions} />
     </div>
   );
 }

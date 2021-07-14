@@ -1,0 +1,12 @@
+Version 1.2 2021-07-14
+Add special priority settings.
+Change option settings from input to dropdown list.
+
+Version 1.1 2021-07-14
+Transfer the default available options and projects list to json.
+CSS update
+
+Version 1.0 2021-07-13
+Azur Lane research assistant is a tool to calculate Azur Lane research projects' priority in Azur Lane script app '雨点'.
+It calculates projects' priority based on the same settings from the '雨点' script app.
+Once users get the desired priority result, they can apply the same congfiguration to the '雨点' script app.

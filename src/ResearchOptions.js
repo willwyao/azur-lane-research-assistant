@@ -1,6 +1,7 @@
 import React from "react";
 
 const ResearchOptions = ({ options, setOptions }) => {
+  const optionValueList = [0, 1, 2, 3, 4, 5, 6, 50, 99];
   const handleChange = (e) => {
     const optionId = parseInt(e.target.name);
     const optionValue = parseInt(e.target.value);
@@ -17,10 +18,10 @@ const ResearchOptions = ({ options, setOptions }) => {
     });
     setOptions(newOptions);
   };
+
   return (
     <div className="container">
       <h3>优先级设置</h3>
-      <p>可用优先级：0（屏蔽），1，2，3，4，5，6，50，99</p>
       <form className="row justify-content-between">
         {options.map((group) => {
           const { id, group_name, items } = group;
@@ -36,13 +37,20 @@ const ResearchOptions = ({ options, setOptions }) => {
                       key={id}
                     >
                       <label htmlFor={id}>{title}</label>
-                      <input
-                        type="number"
+                      <select
                         name={id}
-                        value={value}
                         onChange={handleChange}
                         className="option-value"
-                      />
+                        value={value}
+                      >
+                        {optionValueList.map((item, index) => {
+                          return (
+                            <option value={item} key={index}>
+                              {item === 0 ? "屏蔽" : item}
+                            </option>
+                          );
+                        })}
+                      </select>
                     </div>
                   );
                 })}

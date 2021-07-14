@@ -12,6 +12,10 @@ code {
     monospace;
 } */
 
+.container {
+  margin-bottom: 2em;
+}
+
 .option-value {
   width: 3em;
   margin-right: 3em;
@@ -22,10 +26,31 @@ code {
   }
 }
 
-.project {
+.projects-container .project {
   width: 30%;
+  background-color: #faa4a9;
+  border-radius: 0.5em;
+  padding: 0.2em 0.5em;
+  margin-right: 5%;
+}
+.projects-container .project:nth-child(3n) {
+  margin-right: 0;
+}
+
+.project span {
+  margin-right: 1em;
+}
+.project span:last-child {
+  margin-right: 0;
+}
+
+.project-name {
+  font-weight: bold;
 }
 
 .projects-container .row {
-  border-bottom: 1px solid black;
+  border: #d9edf7 solid 2px;
+  padding: 0 0.5em;
+  justify-content: flex-start;
+  border-radius: 0.5em;
 }
