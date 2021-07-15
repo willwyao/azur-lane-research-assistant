@@ -2,10 +2,11 @@
 import { useState, useEffect } from "react";
 import ResearchOptions from "./ResearchOptions";
 import ResearchProjects from "./ResearchProjects";
-import availableOptions from "./availableOptions.json";
+import defaultOptions from "./defaultOptions.json";
 import SpecialOptions from "./SpecialOptions";
+import defaultOptionClasses from "./defaultOptionClasses.json";
 
-const version = "1.2";
+const version = "1.3";
 
 const getStoredOptions = () => {
   let storedVersion = localStorage.getItem("azur_version");
@@ -16,10 +17,10 @@ const getStoredOptions = () => {
       return storedOptions;
     } else {
       localStorage.removeItem("azur_options");
-      return availableOptions;
+      return defaultOptions;
     }
   } else {
-    return availableOptions;
+    return defaultOptions;
   }
 };
 
@@ -44,6 +45,7 @@ const getSpecialOptions = () => {
 function App() {
   const [options, setOptions] = useState(getStoredOptions());
   const [specialOptions, setSpecialOptions] = useState(getSpecialOptions());
+  const optionClasses = defaultOptionClasses;
 
   useEffect(() => {
     localStorage.setItem("azur_version", version);
@@ -58,7 +60,11 @@ function App() {
           碧蓝航线脚本科研助手 <small>v{version}</small>
         </h1>
       </header>
-      <ResearchOptions options={options} setOptions={setOptions} />
+      <ResearchOptions
+        options={options}
+        optionClasses={optionClasses}
+        setOptions={setOptions}
+      />
       <SpecialOptions
         specialOptions={specialOptions}
         setSpecialOptions={setSpecialOptions}

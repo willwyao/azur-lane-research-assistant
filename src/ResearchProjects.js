@@ -11,20 +11,27 @@ const ResearchProjects = ({ options, specialOptions }) => {
   //     loadedOptions.push(item);
   //   });
   // });
-  let loadedOptions = [];
-  loadedOptions = options.flatMap((group) => group.items);
+  // let loadedOptions = [];
+  // loadedOptions = options.flatMap((group) => group.items);
 
   let projects = availableProjects.map((project) => {
     let finalValue = 0;
-    let projectValues = [];
+    //let projectValues = [];
 
     //load option values into each project
-    project.projectParts.forEach((partId) => {
-      let partValue = loadedOptions.find(
-        (loadedOption) => loadedOption.id === partId
+    let projectValues = project.projectParts.map((partId) => {
+      let partValue = options.find(
+        (option) => option.id === partId.toString()
       ).value;
-      projectValues.push(partValue);
+      return partValue;
     });
+
+    // project.projectParts.forEach((partId) => {
+    //   let partValue = options.find(
+    //     (option) => option.id === toString(partId)
+    //   ).value;
+    //   projectValues.push(partValue);
+    // });
 
     //calculate project final value
     if (projectValues.indexOf(0) === -1) {
