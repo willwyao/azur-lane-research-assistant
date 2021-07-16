@@ -3,36 +3,42 @@
     "id": "cost",
     "title": "完成条件",
     "optionIds": ["11", "12", "13", "14", "15", "16"],
-    "required": true
+    "required": true,
+    "mulltiValue": true
   },
   {
     "id": "season",
     "title": "科研期数",
     "optionIds": ["21", "22", "23", "24"],
-    "required": true
+    "required": true,
+    "mulltiValue": false
   },
   {
     "id": "type",
     "title": "研发类型",
     "optionIds": ["31", "32", "33", "34", "35", "36", "37", "38"],
-    "required": true
+    "required": false,
+    "mulltiValue": false
   },
   {
     "id": "colour",
     "title": "背景颜色",
     "optionIds": ["41", "42", "43", "44"],
-    "required": true
+    "required": true,
+    "mulltiValue": false
   },
   {
     "id": "scale",
     "title": "研发规模",
     "optionIds": ["51", "52", "53"],
-    "required": true
+    "required": true,
+    "mulltiValue": false
   },
   {
     "id": "ship",
     "title": "研发舰船",
     "optionIds": ["61", "62", "63", "64", "65", "66", "67"],
-    "required": false
+    "required": false,
+    "mulltiValue": false
   }
 ]

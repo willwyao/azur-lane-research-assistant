@@ -6,7 +6,7 @@ import defaultOptions from "./defaultOptions.json";
 import SpecialOptions from "./SpecialOptions";
 import defaultOptionClasses from "./defaultOptionClasses.json";
 
-const version = "1.3";
+const version = "1.4";
 
 const getStoredOptions = () => {
   let storedVersion = localStorage.getItem("azur_version");

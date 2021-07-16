@@ -1,0 +1,753 @@
+[
+  {
+    "id": "001",
+    "projectName": "4期彩色彩船定向（0.5H）",
+    "projectParts": [11, 12, 24, 31, 44, 53, 62],
+    "attributes": {
+      "cost": ["11", "12"],
+      "season": "24",
+      "type": "31",
+      "colour": "44",
+      "scale": "53",
+      "ship": "62",
+      "time": "0.5"
+    },
+    "value": 0
+  },
+  {
+    "id": "002",
+    "projectName": "4期金色彩船定向（8H）",
+    "projectParts": [12, 24, 31, 41, 51, 62],
+    "attributes": {
+      "cost": ["12"],
+      "season": "24",
+      "type": "31",
+      "colour": "41",
+      "scale": "51",
+      "ship": "62",
+      "time": "8"
+    },
+    "value": 0
+  },
+  {
+    "id": "003",
+    "projectName": "4期紫色彩船定向（5H）",
+    "projectParts": [12, 24, 31, 42, 52, 62],
+    "attributes": {
+      "cost": ["12"],
+      "season": "24",
+      "type": "31",
+      "colour": "42",
+      "scale": "52",
+      "ship": "62",
+      "time": "5"
+    },
+    "value": 0
+  },
+  {
+    "id": "004",
+    "projectName": "4期蓝色彩船定向（2.5H）",
+    "projectParts": [12, 24, 31, 43, 53, 62],
+    "attributes": {
+      "cost": ["12"],
+      "season": "24",
+      "type": "31",
+      "colour": "43",
+      "scale": "53",
+      "ship": "62",
+      "time": "2.5"
+    },
+    "value": 0
+  },
+  {
+    "id": "005",
+    "projectName": "4期金色金船定向（0.5H）",
+    "projectParts": [11, 12, 24, 31, 41, 53, 61],
+    "attributes": {
+      "cost": ["11", "12"],
+      "season": "24",
+      "type": "31",
+      "colour": "41",
+      "scale": "53",
+      "ship": "61",
+      "time": "0.5"
+    },
+    "value": 0
+  },
+  {
+    "id": "006",
+    "projectName": "4期金色金船定向（8H）",
+    "projectParts": [12, 24, 31, 41, 51, 61],
+    "attributes": {
+      "cost": ["12"],
+      "season": "24",
+      "type": "31",
+      "colour": "41",
+      "scale": "51",
+      "ship": "61",
+      "time": "8"
+    },
+    "value": 0
+  },
+  {
+    "id": "007",
+    "projectName": "4期紫色金船定向（5H）",
+    "projectParts": [12, 24, 31, 42, 52, 61],
+    "attributes": {
+      "cost": ["12"],
+      "season": "24",
+      "type": "31",
+      "colour": "42",
+      "scale": "52",
+      "ship": "61",
+      "time": "5"
+    },
+    "value": 0
+  },
+  {
+    "id": "008",
+    "projectName": "4期蓝色金船定向（2.5H）",
+    "projectParts": [12, 24, 31, 43, 53, 61],
+    "attributes": {
+      "cost": ["12"],
+      "season": "24",
+      "type": "31",
+      "colour": "43",
+      "scale": "53",
+      "ship": "61",
+      "time": "2.5"
+    },
+    "value": 0
+  },
+  {
+    "id": "009",
+    "projectName": "4期金色舰装解析（0.5H）",
+    "projectParts": [12, 15, 24, 37, 41, 53],
+    "attributes": {
+      "cost": ["12", "15"],
+      "season": "24",
+      "type": "37",
+      "colour": "41",
+      "scale": "53",
+      "ship": null,
+      "time": "0.5"
+    },
+    "value": 0
+  },
+  {
+    "id": "010",
+    "projectName": "4期紫色舰装解析（4H）",
+    "projectParts": [15, 24, 37, 42, 52],
+    "attributes": {
+      "cost": ["15"],
+      "season": "24",
+      "type": "37",
+      "colour": "42",
+      "scale": "52",
+      "ship": null,
+      "time": "4"
+    },
+    "value": 0
+  },
+  {
+    "id": "011",
+    "projectName": "4期蓝色舰装解析（2H）",
+    "projectParts": [15, 24, 37, 43, 53],
+    "attributes": {
+      "cost": ["15"],
+      "season": "24",
+      "type": "37",
+      "colour": "43",
+      "scale": "53",
+      "ship": null,
+      "time": "2"
+    },
+    "value": 0
+  },
+  {
+    "id": "012",
+    "projectName": "4期蓝色舰装解析（1H）",
+    "projectParts": [15, 24, 37, 43, 53],
+    "attributes": {
+      "cost": ["15"],
+      "season": "24",
+      "type": "37",
+      "colour": "43",
+      "scale": "53",
+      "ship": null,
+      "time": "1"
+    },
+    "value": 0
+  },
+  {
+    "id": "013",
+    "projectName": "4期金色数据收集",
+    "projectParts": [16, 24, 35, 41, 52],
+    "attributes": {
+      "cost": ["16"],
+      "season": "24",
+      "type": "35",
+      "colour": "41",
+      "scale": "52",
+      "ship": null,
+      "time": "4"
+    },
+    "value": 0
+  },
+  {
+    "id": "014",
+    "projectName": "4期紫色资金募集（4H）",
+    "projectParts": [12, 24, 33, 42, 52],
+    "attributes": {
+      "cost": ["12"],
+      "season": "24",
+      "type": "33",
+      "colour": "42",
+      "scale": "52",
+      "ship": null,
+      "time": "4"
+    },
+    "value": 0
+  },
+  {
+    "id": "015",
+    "projectName": "4期蓝色资金募集（2.5H）",
+    "projectParts": [12, 24, 33, 43, 53],
+    "attributes": {
+      "cost": ["12"],
+      "season": "24",
+      "type": "33",
+      "colour": "43",
+      "scale": "53",
+      "ship": null,
+      "time": "2.5"
+    },
+    "value": 0
+  },
+  {
+    "id": "016",
+    "projectName": "4期蓝色资金募集（1.5H）",
+    "projectParts": [12, 24, 33, 43, 53],
+    "attributes": {
+      "cost": ["12"],
+      "season": "24",
+      "type": "33",
+      "colour": "43",
+      "scale": "53",
+      "ship": null,
+      "time": "1.5"
+    },
+    "value": 0
+  },
+  {
+    "id": "017",
+    "projectName": "4期紫色试验募集（2H）",
+    "projectParts": [16, 24, 34, 42, 53],
+    "attributes": {
+      "cost": ["16"],
+      "season": "24",
+      "type": "34",
+      "colour": "42",
+      "scale": "53",
+      "ship": null,
+      "time": "2"
+    },
+    "value": 0
+  },
+  {
+    "id": "018",
+    "projectName": "4期蓝色试验募集（2H）",
+    "projectParts": [16, 24, 34, 43, 53],
+    "attributes": {
+      "cost": ["16"],
+      "season": "24",
+      "type": "34",
+      "colour": "43",
+      "scale": "53",
+      "ship": null,
+      "time": "2"
+    },
+    "value": 0
+  },
+  {
+    "id": "019",
+    "projectName": "4期金色心智补全（0.5H）",
+    "projectParts": [11, 12, 24, 41, 53],
+    "attributes": {
+      "cost": ["11", "12"],
+      "season": "24",
+      "type": null,
+      "colour": "41",
+      "scale": "53",
+      "ship": null,
+      "time": "0.5"
+    },
+    "value": 0
+  },
+  {
+    "id": "020",
+    "projectName": "4期金色魔方解析（4H）",
+    "projectParts": [11, 24, 36, 41, 52],
+    "attributes": {
+      "cost": ["11"],
+      "season": "24",
+      "type": "36",
+      "colour": "41",
+      "scale": "52",
+      "ship": null,
+      "time": "4"
+    },
+    "value": 0
+  },
+  {
+    "id": "021",
+    "projectName": "4期紫色魔方解析（2H）",
+    "projectParts": [11, 24, 36, 42, 53],
+    "attributes": {
+      "cost": ["11"],
+      "season": "24",
+      "type": "36",
+      "colour": "42",
+      "scale": "53",
+      "ship": null,
+      "time": "2"
+    },
+    "value": 0
+  },
+  {
+    "id": "022",
+    "projectName": "4期蓝色魔方解析（1H）",
+    "projectParts": [11, 24, 36, 43, 53],
+    "attributes": {
+      "cost": ["11"],
+      "season": "24",
+      "type": "36",
+      "colour": "43",
+      "scale": "53",
+      "ship": null,
+      "time": "1"
+    },
+    "value": 0
+  },
+  {
+    "id": "023",
+    "projectName": "4期金色基础研究（12H）",
+    "projectParts": [13, 24, 32, 41, 51],
+    "attributes": {
+      "cost": ["13"],
+      "season": "24",
+      "type": "32",
+      "colour": "41",
+      "scale": "51",
+      "ship": null,
+      "time": "12"
+    },
+    "value": 0
+  },
+  {
+    "id": "024",
+    "projectName": "4期紫色基础研究（8H）",
+    "projectParts": [13, 24, 32, 42, 51],
+    "attributes": {
+      "cost": ["13"],
+      "season": "24",
+      "type": "32",
+      "colour": "42",
+      "scale": "51",
+      "ship": null,
+      "time": "8"
+    },
+    "value": 0
+  },
+  {
+    "id": "025",
+    "projectName": "4期蓝色基础研究（6H）",
+    "projectParts": [13, 24, 32, 43, 52],
+    "attributes": {
+      "cost": ["13"],
+      "season": "24",
+      "type": "32",
+      "colour": "43",
+      "scale": "52",
+      "ship": null,
+      "time": "6"
+    },
+    "value": 0
+  },
+
+  {
+    "id": "026",
+    "projectName": "3期彩色彩船定向（0.5H）",
+    "projectParts": [11, 12, 23, 31, 44, 53, 64],
+    "attributes": {
+      "cost": ["11", "12"],
+      "season": "23",
+      "type": "31",
+      "colour": "44",
+      "scale": "53",
+      "ship": "64",
+      "time": "0.5"
+    },
+    "value": 0
+  },
+  {
+    "id": "027",
+    "projectName": "3期金色彩船定向（8H）",
+    "projectParts": [12, 23, 31, 41, 51, 64],
+    "attributes": {
+      "cost": ["12"],
+      "season": "23",
+      "type": "31",
+      "colour": "41",
+      "scale": "51",
+      "ship": "64",
+      "time": "8"
+    },
+    "value": 0
+  },
+  {
+    "id": "028",
+    "projectName": "3期紫色彩船定向（5H）",
+    "projectParts": [12, 23, 31, 42, 52, 64],
+    "attributes": {
+      "cost": ["12"],
+      "season": "23",
+      "type": "31",
+      "colour": "42",
+      "scale": "52",
+      "ship": "64",
+      "time": "5"
+    },
+    "value": 0
+  },
+  {
+    "id": "029",
+    "projectName": "3期蓝色彩船定向（2.5H）",
+    "projectParts": [12, 23, 31, 43, 53, 64],
+    "attributes": {
+      "cost": ["12"],
+      "season": "23",
+      "type": "31",
+      "colour": "43",
+      "scale": "53",
+      "ship": "64",
+      "time": "2.5"
+    },
+    "value": 0
+  },
+  {
+    "id": "030",
+    "projectName": "3期金色金船定向（0.5H）",
+    "projectParts": [11, 12, 23, 31, 41, 53, 63],
+    "attributes": {
+      "cost": ["11", "12"],
+      "season": "23",
+      "type": "31",
+      "colour": "41",
+      "scale": "53",
+      "ship": "63",
+      "time": "0.5"
+    },
+    "value": 0
+  },
+  {
+    "id": "031",
+    "projectName": "3期金色金船定向（8H）",
+    "projectParts": [12, 23, 31, 41, 51, 63],
+    "attributes": {
+      "cost": ["12"],
+      "season": "23",
+      "type": "31",
+      "colour": "41",
+      "scale": "51",
+      "ship": "63",
+      "time": "8"
+    },
+    "value": 0
+  },
+  {
+    "id": "032",
+    "projectName": "3期紫色金船定向（5H）",
+    "projectParts": [12, 23, 31, 42, 52, 63],
+    "attributes": {
+      "cost": ["12"],
+      "season": "23",
+      "type": "31",
+      "colour": "42",
+      "scale": "52",
+      "ship": "63",
+      "time": "5"
+    },
+    "value": 0
+  },
+  {
+    "id": "033",
+    "projectName": "3期蓝色金船定向（2.5H）",
+    "projectParts": [12, 23, 31, 43, 53, 63],
+    "attributes": {
+      "cost": ["12"],
+      "season": "23",
+      "type": "31",
+      "colour": "43",
+      "scale": "53",
+      "ship": "63",
+      "time": "2.5"
+    },
+    "value": 0
+  },
+  {
+    "id": "034",
+    "projectName": "3期金色舰装解析（0.5H）",
+    "projectParts": [12, 15, 23, 37, 41, 53],
+    "attributes": {
+      "cost": ["12", "15"],
+      "season": "23",
+      "type": "37",
+      "colour": "41",
+      "scale": "53",
+      "ship": null,
+      "time": "0.5"
+    },
+    "value": 0
+  },
+  {
+    "id": "035",
+    "projectName": "3期紫色舰装解析（4H）",
+    "projectParts": [15, 23, 37, 42, 52],
+    "attributes": {
+      "cost": ["15"],
+      "season": "23",
+      "type": "37",
+      "colour": "42",
+      "scale": "52",
+      "ship": null,
+      "time": "4"
+    },
+    "value": 0
+  },
+  {
+    "id": "036",
+    "projectName": "3期蓝色舰装解析（2H）",
+    "projectParts": [15, 23, 37, 43, 53],
+    "attributes": {
+      "cost": ["15"],
+      "season": "23",
+      "type": "37",
+      "colour": "43",
+      "scale": "53",
+      "ship": null,
+      "time": "2"
+    },
+    "value": 0
+  },
+  {
+    "id": "037",
+    "projectName": "3期蓝色舰装解析（1H）",
+    "projectParts": [15, 23, 37, 43, 53],
+    "attributes": {
+      "cost": ["15"],
+      "season": "23",
+      "type": "37",
+      "colour": "43",
+      "scale": "53",
+      "ship": null,
+      "time": "1"
+    },
+    "value": 0
+  },
+  {
+    "id": "038",
+    "projectName": "3期金色数据收集",
+    "projectParts": [16, 23, 35, 41, 52],
+    "attributes": {
+      "cost": ["16"],
+      "season": "23",
+      "type": "35",
+      "colour": "41",
+      "scale": "52",
+      "ship": null,
+      "time": "4"
+    },
+    "value": 0
+  },
+  {
+    "id": "039",
+    "projectName": "3期紫色资金募集（4H）",
+    "projectParts": [12, 23, 33, 42, 52],
+    "attributes": {
+      "cost": ["12"],
+      "season": "23",
+      "type": "33",
+      "colour": "42",
+      "scale": "52",
+      "ship": null,
+      "time": "4"
+    },
+    "value": 0
+  },
+  {
+    "id": "040",
+    "projectName": "3期蓝色资金募集（2.5H）",
+    "projectParts": [12, 23, 33, 43, 53],
+    "attributes": {
+      "cost": ["12"],
+      "season": "23",
+      "type": "33",
+      "colour": "43",
+      "scale": "53",
+      "ship": null,
+      "time": "2.5"
+    },
+    "value": 0
+  },
+  {
+    "id": "041",
+    "projectName": "3期蓝色资金募集（1.5H）",
+    "projectParts": [12, 23, 33, 43, 53],
+    "attributes": {
+      "cost": ["12"],
+      "season": "23",
+      "type": "33",
+      "colour": "43",
+      "scale": "53",
+      "ship": null,
+      "time": "1.5"
+    },
+    "value": 0
+  },
+  {
+    "id": "042",
+    "projectName": "3期紫色试验募集（2H）",
+    "projectParts": [16, 23, 34, 42, 53],
+    "attributes": {
+      "cost": ["16"],
+      "season": "23",
+      "type": "34",
+      "colour": "42",
+      "scale": "53",
+      "ship": null,
+      "time": "2"
+    },
+    "value": 0
+  },
+  {
+    "id": "043",
+    "projectName": "3期蓝色试验募集（2H）",
+    "projectParts": [16, 23, 34, 43, 53],
+    "attributes": {
+      "cost": ["16"],
+      "season": "23",
+      "type": "34",
+      "colour": "43",
+      "scale": "53",
+      "ship": null,
+      "time": "2"
+    },
+    "value": 0
+  },
+  {
+    "id": "044",
+    "projectName": "3期金色心智补全（0.5H）",
+    "projectParts": [11, 12, 23, 41, 53],
+    "attributes": {
+      "cost": ["11", "12"],
+      "season": "23",
+      "type": null,
+      "colour": "41",
+      "scale": "53",
+      "ship": null,
+      "time": "0.5"
+    },
+    "value": 0
+  },
+  {
+    "id": "045",
+    "projectName": "3期金色魔方解析（4H）",
+    "projectParts": [11, 23, 36, 41, 52],
+    "attributes": {
+      "cost": ["11"],
+      "season": "23",
+      "type": "36",
+      "colour": "41",
+      "scale": "52",
+      "ship": null,
+      "time": "4"
+    },
+    "value": 0
+  },
+  {
+    "id": "046",
+    "projectName": "3期紫色魔方解析（2H）",
+    "projectParts": [11, 23, 36, 42, 53],
+    "attributes": {
+      "cost": ["11"],
+      "season": "23",
+      "type": "36",
+      "colour": "42",
+      "scale": "53",
+      "ship": null,
+      "time": "2"
+    },
+    "value": 0
+  },
+  {
+    "id": "047",
+    "projectName": "3期蓝色魔方解析（1H）",
+    "projectParts": [11, 23, 36, 43, 53],
+    "attributes": {
+      "cost": ["11"],
+      "season": "23",
+      "type": "36",
+      "colour": "43",
+      "scale": "53",
+      "ship": null,
+      "time": "1"
+    },
+    "value": 0
+  },
+  {
+    "id": "048",
+    "projectName": "3期金色基础研究（12H）",
+    "projectParts": [13, 23, 32, 41, 51],
+    "attributes": {
+      "cost": ["13"],
+      "season": "23",
+      "type": "32",
+      "colour": "41",
+      "scale": "51",
+      "ship": null,
+      "time": "12"
+    },
+    "value": 0
+  },
+  {
+    "id": "049",
+    "projectName": "3期紫色基础研究（8H）",
+    "projectParts": [13, 23, 32, 42, 51],
+    "attributes": {
+      "cost": ["13"],
+      "season": "23",
+      "type": "32",
+      "colour": "42",
+      "scale": "51",
+      "ship": null,
+      "time": "8"
+    },
+    "value": 0
+  },
+  {
+    "id": "050",
+    "projectName": "3期蓝色基础研究（6H）",
+    "projectParts": [13, 23, 32, 43, 52],
+    "attributes": {
+      "cost": ["13"],
+      "season": "23",
+      "type": "32",
+      "colour": "43",
+      "scale": "52",
+      "ship": null,
+      "time": "6"
+    },
+    "value": 0
+  }
+]

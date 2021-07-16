@@ -1,3 +1,7 @@
+Version 1.4 2021-07-16
+Update prijects' data structure with attributes.
+Update ResearchProjects componant.
+
 Version 1.3 2021-07-15
 Update option's data structure.
 Add option's classes.
