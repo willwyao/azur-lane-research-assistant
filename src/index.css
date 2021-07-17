@@ -27,18 +27,29 @@ code {
 }
 
 .projects-container .project {
-  width: 30%;
-  background-color: #faa4a9;
-  border-radius: 0.5em;
-  padding: 0.2em 0.5em;
-  margin-right: 5%;
+  margin-top: 0.2em;
+  margin-bottom: 0.2em;
 }
-.projects-container .project:nth-child(3n) {
-  margin-right: 0;
+
+.projects-container .project .project-inner {
+  border-radius: 0.5em;
+  padding: 0.2em;
+}
+.project-inner.bg-41 {
+  background-color: #fffe9f;
+}
+.project-inner.bg-42 {
+  background-color: #d3b8ea;
+}
+.project-inner.bg-43 {
+  background-color: #c2fbfe;
+}
+.project-inner.bg-44 {
+  background-color: #faa4a9;
 }
 
 .project span {
-  margin-right: 1em;
+  margin-right: 0.2em;
 }
 .project span:last-child {
   margin-right: 0;

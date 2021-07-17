@@ -55,7 +55,7 @@ const getProjectValue = (attributes, storedOptions) => {
   }
 };
 
-const generateProjectLabel = (attributes, storedOptions) => {
+const generateProjectLabel = (attributes, storedOptions, defaultLabel) => {
   let season = "";
   let type = "";
   let colour = "";
@@ -90,8 +90,11 @@ const generateProjectLabel = (attributes, storedOptions) => {
         break;
     }
   }
-
-  return `${season}${colour}${scale}${ship}${type}-${time}H`;
+  if (type === "") {
+    return defaultLabel;
+  } else {
+    return `${season}${colour}${scale}${ship}${type}-${time}H`;
+  }
 };
 
 const ResearchProjects = ({ options, specialOptions }) => {
@@ -99,37 +102,20 @@ const ResearchProjects = ({ options, specialOptions }) => {
   let currentTier = [];
   let currentValue = 0;
 
-  // options.forEach((group) => {
-  //   group.items.forEach((item) => {
-  //     loadedOptions.push(item);
-  //   });
-  // });
-  // let loadedOptions = [];
-  // loadedOptions = options.flatMap((group) => group.items);
-
   let projects = defaultProjects.map((project) => {
-    //load option values into each project
-    // let projectValues = getOptionIdList(project.attributes).map((optionId) => {
-    //   return getOptionValue(optionId, options);
-    // });
-
-    //calculate project final value
-    // if (projectValues.indexOf(0) === -1) {
-    //   finalValue = projectValues.reduce((a, b) => {
-    //     return parseInt(a) + parseInt(b);
-    //   });
-    // } else {
-    //   finalValue = 0;
-    // }
-
     const finalValue = getProjectValue(project.attributes, options);
-    const projectLabel = generateProjectLabel(project.attributes, options);
+    const projectLabel = generateProjectLabel(
+      project.attributes,
+      options,
+      project.projectName
+    );
 
     return {
       id: project.id,
       name: projectLabel,
       value: finalValue,
       attributes: project.attributes,
+      colour: project.attributes.colour,
     };
   });
 
@@ -165,10 +151,12 @@ const ResearchProjects = ({ options, specialOptions }) => {
             <div className={`tier-${index} row mb-1`} key={index}>
               {tier.map((project, index) => {
                 return (
-                  <div className="project" key={index}>
-                    <span>#{project.id}</span>
-                    <span className="project-name">{project.name}:</span>
-                    <span className="project-value">{project.value}</span>
+                  <div className="project col-sm-6 col-lg-4" key={index}>
+                    <div className={`project-inner bg-${project.colour}`}>
+                      <span>#{project.id}</span>
+                      <span className="project-name">{project.name}:</span>
+                      <span className="project-value">{project.value}</span>
+                    </div>
                   </div>
                 );
               })}

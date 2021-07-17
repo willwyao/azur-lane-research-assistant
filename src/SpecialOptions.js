@@ -15,7 +15,7 @@ const SpecialOptions = ({ specialOptions, setSpecialOptions }) => {
   return (
     <div className="special-options container">
       <h3>特殊优先级设置</h3>
-      <p>越下方位置优先级越高</p>
+      <p>越下方位置优先级越高(编号为三位数字)</p>
       <form>
         {currentPriority.map((item, index, arr) => {
           return (

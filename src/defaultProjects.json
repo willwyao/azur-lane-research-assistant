@@ -1,7 +1,7 @@
 [
   {
     "id": "001",
-    "projectName": "4期彩色彩船定向（0.5H）",
+    "projectName": "4期彩色彩船定向-0.5H",
     "projectParts": [11, 12, 24, 31, 44, 53, 62],
     "attributes": {
       "cost": ["11", "12"],
@@ -16,7 +16,7 @@
   },
   {
     "id": "002",
-    "projectName": "4期金色彩船定向（8H）",
+    "projectName": "4期金色彩船定向-8H",
     "projectParts": [12, 24, 31, 41, 51, 62],
     "attributes": {
       "cost": ["12"],
@@ -31,7 +31,7 @@
   },
   {
     "id": "003",
-    "projectName": "4期紫色彩船定向（5H）",
+    "projectName": "4期紫色彩船定向-5H",
     "projectParts": [12, 24, 31, 42, 52, 62],
     "attributes": {
       "cost": ["12"],
@@ -46,7 +46,7 @@
   },
   {
     "id": "004",
-    "projectName": "4期蓝色彩船定向（2.5H）",
+    "projectName": "4期蓝色彩船定向-2.5H",
     "projectParts": [12, 24, 31, 43, 53, 62],
     "attributes": {
       "cost": ["12"],
@@ -61,7 +61,7 @@
   },
   {
     "id": "005",
-    "projectName": "4期金色金船定向（0.5H）",
+    "projectName": "4期金色金船定向-0.5H",
     "projectParts": [11, 12, 24, 31, 41, 53, 61],
     "attributes": {
       "cost": ["11", "12"],
@@ -76,7 +76,7 @@
   },
   {
     "id": "006",
-    "projectName": "4期金色金船定向（8H）",
+    "projectName": "4期金色金船定向-8H",
     "projectParts": [12, 24, 31, 41, 51, 61],
     "attributes": {
       "cost": ["12"],
@@ -91,7 +91,7 @@
   },
   {
     "id": "007",
-    "projectName": "4期紫色金船定向（5H）",
+    "projectName": "4期紫色金船定向-5H",
     "projectParts": [12, 24, 31, 42, 52, 61],
     "attributes": {
       "cost": ["12"],
@@ -106,7 +106,7 @@
   },
   {
     "id": "008",
-    "projectName": "4期蓝色金船定向（2.5H）",
+    "projectName": "4期蓝色金船定向-2.5H",
     "projectParts": [12, 24, 31, 43, 53, 61],
     "attributes": {
       "cost": ["12"],
@@ -121,7 +121,7 @@
   },
   {
     "id": "009",
-    "projectName": "4期金色舰装解析（0.5H）",
+    "projectName": "4期金色舰装解析-0.5H",
     "projectParts": [12, 15, 24, 37, 41, 53],
     "attributes": {
       "cost": ["12", "15"],
@@ -136,7 +136,7 @@
   },
   {
     "id": "010",
-    "projectName": "4期紫色舰装解析（4H）",
+    "projectName": "4期紫色舰装解析-4H",
     "projectParts": [15, 24, 37, 42, 52],
     "attributes": {
       "cost": ["15"],
@@ -151,7 +151,7 @@
   },
   {
     "id": "011",
-    "projectName": "4期蓝色舰装解析（2H）",
+    "projectName": "4期蓝色舰装解析-2H",
     "projectParts": [15, 24, 37, 43, 53],
     "attributes": {
       "cost": ["15"],
@@ -166,7 +166,7 @@
   },
   {
     "id": "012",
-    "projectName": "4期蓝色舰装解析（1H）",
+    "projectName": "4期蓝色舰装解析-1H",
     "projectParts": [15, 24, 37, 43, 53],
     "attributes": {
       "cost": ["15"],
@@ -196,7 +196,7 @@
   },
   {
     "id": "014",
-    "projectName": "4期紫色资金募集（4H）",
+    "projectName": "4期紫色资金募集-4H",
     "projectParts": [12, 24, 33, 42, 52],
     "attributes": {
       "cost": ["12"],
@@ -211,7 +211,7 @@
   },
   {
     "id": "015",
-    "projectName": "4期蓝色资金募集（2.5H）",
+    "projectName": "4期蓝色资金募集-2.5H",
     "projectParts": [12, 24, 33, 43, 53],
     "attributes": {
       "cost": ["12"],
@@ -226,7 +226,7 @@
   },
   {
     "id": "016",
-    "projectName": "4期蓝色资金募集（1.5H）",
+    "projectName": "4期蓝色资金募集-1.5H",
     "projectParts": [12, 24, 33, 43, 53],
     "attributes": {
       "cost": ["12"],
@@ -241,7 +241,7 @@
   },
   {
     "id": "017",
-    "projectName": "4期紫色试验募集（2H）",
+    "projectName": "4期紫色试验募集-2H",
     "projectParts": [16, 24, 34, 42, 53],
     "attributes": {
       "cost": ["16"],
@@ -256,7 +256,7 @@
   },
   {
     "id": "018",
-    "projectName": "4期蓝色试验募集（2H）",
+    "projectName": "4期蓝色试验募集-2H",
     "projectParts": [16, 24, 34, 43, 53],
     "attributes": {
       "cost": ["16"],
@@ -271,7 +271,7 @@
   },
   {
     "id": "019",
-    "projectName": "4期金色心智补全（0.5H）",
+    "projectName": "4期金色心智补全-0.5H",
     "projectParts": [11, 12, 24, 41, 53],
     "attributes": {
       "cost": ["11", "12"],
@@ -286,7 +286,7 @@
   },
   {
     "id": "020",
-    "projectName": "4期金色魔方解析（4H）",
+    "projectName": "4期金色魔方解析-4H",
     "projectParts": [11, 24, 36, 41, 52],
     "attributes": {
       "cost": ["11"],
@@ -301,7 +301,7 @@
   },
   {
     "id": "021",
-    "projectName": "4期紫色魔方解析（2H）",
+    "projectName": "4期紫色魔方解析-2H",
     "projectParts": [11, 24, 36, 42, 53],
     "attributes": {
       "cost": ["11"],
@@ -316,7 +316,7 @@
   },
   {
     "id": "022",
-    "projectName": "4期蓝色魔方解析（1H）",
+    "projectName": "4期蓝色魔方解析-1H",
     "projectParts": [11, 24, 36, 43, 53],
     "attributes": {
       "cost": ["11"],
@@ -331,7 +331,7 @@
   },
   {
     "id": "023",
-    "projectName": "4期金色基础研究（12H）",
+    "projectName": "4期金色基础研究-12H",
     "projectParts": [13, 24, 32, 41, 51],
     "attributes": {
       "cost": ["13"],
@@ -346,7 +346,7 @@
   },
   {
     "id": "024",
-    "projectName": "4期紫色基础研究（8H）",
+    "projectName": "4期紫色基础研究-8H",
     "projectParts": [13, 24, 32, 42, 51],
     "attributes": {
       "cost": ["13"],
@@ -361,7 +361,7 @@
   },
   {
     "id": "025",
-    "projectName": "4期蓝色基础研究（6H）",
+    "projectName": "4期蓝色基础研究-6H",
     "projectParts": [13, 24, 32, 43, 52],
     "attributes": {
       "cost": ["13"],
@@ -377,7 +377,7 @@
 
   {
     "id": "026",
-    "projectName": "3期彩色彩船定向（0.5H）",
+    "projectName": "3期彩色彩船定向-0.5H",
     "projectParts": [11, 12, 23, 31, 44, 53, 64],
     "attributes": {
       "cost": ["11", "12"],
@@ -392,7 +392,7 @@
   },
   {
     "id": "027",
-    "projectName": "3期金色彩船定向（8H）",
+    "projectName": "3期金色彩船定向-8H",
     "projectParts": [12, 23, 31, 41, 51, 64],
     "attributes": {
       "cost": ["12"],
@@ -407,7 +407,7 @@
   },
   {
     "id": "028",
-    "projectName": "3期紫色彩船定向（5H）",
+    "projectName": "3期紫色彩船定向-5H",
     "projectParts": [12, 23, 31, 42, 52, 64],
     "attributes": {
       "cost": ["12"],
@@ -422,7 +422,7 @@
   },
   {
     "id": "029",
-    "projectName": "3期蓝色彩船定向（2.5H）",
+    "projectName": "3期蓝色彩船定向-2.5H",
     "projectParts": [12, 23, 31, 43, 53, 64],
     "attributes": {
       "cost": ["12"],
@@ -437,7 +437,7 @@
   },
   {
     "id": "030",
-    "projectName": "3期金色金船定向（0.5H）",
+    "projectName": "3期金色金船定向-0.5H",
     "projectParts": [11, 12, 23, 31, 41, 53, 63],
     "attributes": {
       "cost": ["11", "12"],
@@ -452,7 +452,7 @@
   },
   {
     "id": "031",
-    "projectName": "3期金色金船定向（8H）",
+    "projectName": "3期金色金船定向-8H",
     "projectParts": [12, 23, 31, 41, 51, 63],
     "attributes": {
       "cost": ["12"],
@@ -467,7 +467,7 @@
   },
   {
     "id": "032",
-    "projectName": "3期紫色金船定向（5H）",
+    "projectName": "3期紫色金船定向-5H",
     "projectParts": [12, 23, 31, 42, 52, 63],
     "attributes": {
       "cost": ["12"],
@@ -482,7 +482,7 @@
   },
   {
     "id": "033",
-    "projectName": "3期蓝色金船定向（2.5H）",
+    "projectName": "3期蓝色金船定向-2.5H",
     "projectParts": [12, 23, 31, 43, 53, 63],
     "attributes": {
       "cost": ["12"],
@@ -497,7 +497,7 @@
   },
   {
     "id": "034",
-    "projectName": "3期金色舰装解析（0.5H）",
+    "projectName": "3期金色舰装解析-0.5H",
     "projectParts": [12, 15, 23, 37, 41, 53],
     "attributes": {
       "cost": ["12", "15"],
@@ -512,7 +512,7 @@
   },
   {
     "id": "035",
-    "projectName": "3期紫色舰装解析（4H）",
+    "projectName": "3期紫色舰装解析-4H",
     "projectParts": [15, 23, 37, 42, 52],
     "attributes": {
       "cost": ["15"],
@@ -527,7 +527,7 @@
   },
   {
     "id": "036",
-    "projectName": "3期蓝色舰装解析（2H）",
+    "projectName": "3期蓝色舰装解析-2H",
     "projectParts": [15, 23, 37, 43, 53],
     "attributes": {
       "cost": ["15"],
@@ -542,7 +542,7 @@
   },
   {
     "id": "037",
-    "projectName": "3期蓝色舰装解析（1H）",
+    "projectName": "3期蓝色舰装解析-1H",
     "projectParts": [15, 23, 37, 43, 53],
     "attributes": {
       "cost": ["15"],
@@ -572,7 +572,7 @@
   },
   {
     "id": "039",
-    "projectName": "3期紫色资金募集（4H）",
+    "projectName": "3期紫色资金募集-4H",
     "projectParts": [12, 23, 33, 42, 52],
     "attributes": {
       "cost": ["12"],
@@ -587,7 +587,7 @@
   },
   {
     "id": "040",
-    "projectName": "3期蓝色资金募集（2.5H）",
+    "projectName": "3期蓝色资金募集-2.5H",
     "projectParts": [12, 23, 33, 43, 53],
     "attributes": {
       "cost": ["12"],
@@ -602,7 +602,7 @@
   },
   {
     "id": "041",
-    "projectName": "3期蓝色资金募集（1.5H）",
+    "projectName": "3期蓝色资金募集-1.5H",
     "projectParts": [12, 23, 33, 43, 53],
     "attributes": {
       "cost": ["12"],
@@ -617,7 +617,7 @@
   },
   {
     "id": "042",
-    "projectName": "3期紫色试验募集（2H）",
+    "projectName": "3期紫色试验募集-2H",
     "projectParts": [16, 23, 34, 42, 53],
     "attributes": {
       "cost": ["16"],
@@ -632,7 +632,7 @@
   },
   {
     "id": "043",
-    "projectName": "3期蓝色试验募集（2H）",
+    "projectName": "3期蓝色试验募集-2H",
     "projectParts": [16, 23, 34, 43, 53],
     "attributes": {
       "cost": ["16"],
@@ -647,7 +647,7 @@
   },
   {
     "id": "044",
-    "projectName": "3期金色心智补全（0.5H）",
+    "projectName": "3期金色心智补全-0.5H",
     "projectParts": [11, 12, 23, 41, 53],
     "attributes": {
       "cost": ["11", "12"],
@@ -662,7 +662,7 @@
   },
   {
     "id": "045",
-    "projectName": "3期金色魔方解析（4H）",
+    "projectName": "3期金色魔方解析-4H",
     "projectParts": [11, 23, 36, 41, 52],
     "attributes": {
       "cost": ["11"],
@@ -677,7 +677,7 @@
   },
   {
     "id": "046",
-    "projectName": "3期紫色魔方解析（2H）",
+    "projectName": "3期紫色魔方解析-2H",
     "projectParts": [11, 23, 36, 42, 53],
     "attributes": {
       "cost": ["11"],
@@ -692,7 +692,7 @@
   },
   {
     "id": "047",
-    "projectName": "3期蓝色魔方解析（1H）",
+    "projectName": "3期蓝色魔方解析-1H",
     "projectParts": [11, 23, 36, 43, 53],
     "attributes": {
       "cost": ["11"],
@@ -707,7 +707,7 @@
   },
   {
     "id": "048",
-    "projectName": "3期金色基础研究（12H）",
+    "projectName": "3期金色基础研究-12H",
     "projectParts": [13, 23, 32, 41, 51],
     "attributes": {
       "cost": ["13"],
@@ -722,7 +722,7 @@
   },
   {
     "id": "049",
-    "projectName": "3期紫色基础研究（8H）",
+    "projectName": "3期紫色基础研究-8H",
     "projectParts": [13, 23, 32, 42, 51],
     "attributes": {
       "cost": ["13"],
@@ -737,7 +737,7 @@
   },
   {
     "id": "050",
-    "projectName": "3期蓝色基础研究（6H）",
+    "projectName": "3期蓝色基础研究-6H",
     "projectParts": [13, 23, 32, 43, 52],
     "attributes": {
       "cost": ["13"],
