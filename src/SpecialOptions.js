@@ -1,6 +1,8 @@
 import React from "react";
+import { useGlobalContext } from "./context";
 
-const SpecialOptions = ({ specialOptions, setSpecialOptions }) => {
+const SpecialOptions = () => {
+  const { specialOptions, setSpecialOptions } = useGlobalContext();
   let currentPriority = {};
   currentPriority = specialOptions.priority;
 
@@ -12,6 +14,7 @@ const SpecialOptions = ({ specialOptions, setSpecialOptions }) => {
       priority: currentPriority,
     });
   };
+  console.log(specialOptions);
   return (
     <div className="special-options container">
       <h3>特殊优先级设置</h3>

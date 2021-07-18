@@ -1,5 +1,6 @@
 import React from "react";
 import defaultProjects from "./defaultProjects.json";
+import { useGlobalContext } from "./context";
 
 const getOptionIdList = (attributes) => {
   let optionIdList = [];
@@ -97,7 +98,8 @@ const generateProjectLabel = (attributes, storedOptions, defaultLabel) => {
   }
 };
 
-const ResearchProjects = ({ options, specialOptions }) => {
+const ResearchProjects = () => {
+  const { options, specialOptions } = useGlobalContext();
   let tiers = [];
   let currentTier = [];
   let currentValue = 0;

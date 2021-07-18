@@ -1,58 +1,59 @@
 // import "./App.css";
-import { useState, useEffect } from "react";
+// import { useState, useEffect } from "react";
+import React from "react";
 import ResearchOptions from "./ResearchOptions";
 import ResearchProjects from "./ResearchProjects";
-import defaultOptions from "./defaultOptions.json";
+// import defaultOptions from "./defaultOptions.json";
 import SpecialOptions from "./SpecialOptions";
-import defaultOptionClasses from "./defaultOptionClasses.json";
+// import defaultOptionClasses from "./defaultOptionClasses.json";
+import { useGlobalContext } from "./context";
 
-const version = "1.5";
+// const getStoredOptions = () => {
+//   let storedVersion = localStorage.getItem("azur_version");
+//   let storedOptions = localStorage.getItem("azur_options");
+//   if (storedVersion && storedOptions) {
+//     storedOptions = JSON.parse(localStorage.getItem("azur_options"));
+//     if (storedVersion === version) {
+//       return storedOptions;
+//     } else {
+//       localStorage.removeItem("azur_options");
+//       return defaultOptions;
+//     }
+//   } else {
+//     return defaultOptions;
+//   }
+// };
 
-const getStoredOptions = () => {
-  let storedVersion = localStorage.getItem("azur_version");
-  let storedOptions = localStorage.getItem("azur_options");
-  if (storedVersion && storedOptions) {
-    storedOptions = JSON.parse(localStorage.getItem("azur_options"));
-    if (storedVersion === version) {
-      return storedOptions;
-    } else {
-      localStorage.removeItem("azur_options");
-      return defaultOptions;
-    }
-  } else {
-    return defaultOptions;
-  }
-};
-
-const getSpecialOptions = () => {
-  let storedVersion = localStorage.getItem("azur_version");
-  let storedSpOptions = localStorage.getItem("azur_sp_options");
-  if (storedVersion && storedSpOptions) {
-    storedSpOptions = JSON.parse(localStorage.getItem("azur_sp_options"));
-    if (storedVersion === version) {
-      return storedSpOptions;
-    } else {
-      localStorage.removeItem("azur_sp_options");
-      return {
-        priority: Array(6).fill("0"),
-      };
-    }
-  } else {
-    return { priority: Array(6).fill("0") };
-  }
-};
+// const getSpecialOptions = () => {
+//   let storedVersion = localStorage.getItem("azur_version");
+//   let storedSpOptions = localStorage.getItem("azur_sp_options");
+//   if (storedVersion && storedSpOptions) {
+//     storedSpOptions = JSON.parse(localStorage.getItem("azur_sp_options"));
+//     if (storedVersion === version) {
+//       return storedSpOptions;
+//     } else {
+//       localStorage.removeItem("azur_sp_options");
+//       return {
+//         priority: Array(6).fill("0"),
+//       };
+//     }
+//   } else {
+//     return { priority: Array(6).fill("0") };
+//   }
+// };
 
 function App() {
-  const [options, setOptions] = useState(getStoredOptions());
-  const [specialOptions, setSpecialOptions] = useState(getSpecialOptions());
-  const optionClasses = defaultOptionClasses;
+  // const [options, setOptions] = useState(getStoredOptions());
+  // const [specialOptions, setSpecialOptions] = useState(getSpecialOptions());
+  // const optionClasses = defaultOptionClasses;
 
-  useEffect(() => {
-    localStorage.setItem("azur_version", version);
-    localStorage.setItem("azur_options", JSON.stringify(options));
-    localStorage.setItem("azur_sp_options", JSON.stringify(specialOptions));
-  }, [options, specialOptions]);
+  // useEffect(() => {
+  //   localStorage.setItem("azur_version", version);
+  //   localStorage.setItem("azur_options", JSON.stringify(options));
+  //   localStorage.setItem("azur_sp_options", JSON.stringify(specialOptions));
+  // }, [options, specialOptions]);
 
+  const { version } = useGlobalContext();
   return (
     <div className="App">
       <header className="App-header">
@@ -62,8 +63,7 @@ function App() {
       </header>
       <div className="container">
         <p>
-          请根据自身的需要调整科研项目的优先级，调整完后把设置参数手动录入“雨点航线”。
-          科研项目的选取可以参考碧蓝航线WIKI的
+          本程序基于“雨点航线”开发，用于计算科研项目在脚本内的优先级。首先调整优先级的数值，然后查看页面下方的优先级计算结果。反复调整各个优先级的设置直到出现自己想要的科研排名结果，然后将设置手动录入到“雨点航线”中。计算结果仅供参考，以实际脚本运行结果为准。请根据自身的需要调整科研项目的优先级，科研项目的选取可以参考碧蓝航线WIKI的
           <a
             href="https://wiki.biligame.com/blhx/%E7%A7%91%E7%A0%94%E9%A1%B9%E7%9B%AE%E9%80%89%E5%8F%96%E8%A7%84%E5%88%92%E5%BB%BA%E8%AE%AE"
             target="_blank"
@@ -77,16 +77,9 @@ function App() {
         </p>
       </div>
 
-      <ResearchOptions
-        options={options}
-        optionClasses={optionClasses}
-        setOptions={setOptions}
-      />
-      <SpecialOptions
-        specialOptions={specialOptions}
-        setSpecialOptions={setSpecialOptions}
-      />
-      <ResearchProjects options={options} specialOptions={specialOptions} />
+      <ResearchOptions />
+      <SpecialOptions />
+      <ResearchProjects />
     </div>
   );
 }
