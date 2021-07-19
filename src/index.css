@@ -106,3 +106,7 @@ code {
   font-size: 3em;
   color: grey;
 }
+
+select:focus {
+  border-color: #c2fbfe;
+}
