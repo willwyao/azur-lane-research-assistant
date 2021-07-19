@@ -39,7 +39,7 @@ const ResearchOptions = () => {
                   const { id, title, value, optionClass } = option;
                   return (
                     <div
-                      className={`option-${optionClass} option d-flex justify-content-between`}
+                      className={`option-${optionClass} option mb-2 d-flex justify-content-between`}
                       key={id}
                     >
                       <label htmlFor={id}>{title}</label>

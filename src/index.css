@@ -65,3 +65,33 @@ code {
   justify-content: flex-start;
   border-radius: 0.5em;
 }
+
+.sp-option {
+  display: flex;
+  flex-flow: row;
+  align-items: flex-end;
+}
+
+.sp-option * {
+  margin-right: 0.4em;
+}
+
+.sp-option input[type="checkbox"] {
+  height: 1.5em;
+}
+
+.sp-option .sp-option-title {
+  display: none;
+}
+.sp-option:first-child .sp-option-title {
+  display: block;
+}
+
+.sp-option-box {
+  display: flex;
+  flex-flow: column;
+}
+
+.sp-option-title {
+  text-align: center;
+}

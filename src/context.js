@@ -3,11 +3,12 @@ import defaultOptions from "./defaultOptions.json";
 import defaultOptionClasses from "./defaultOptionClasses.json";
 import defaultProjects from "./defaultProjects.json";
 
-const version = "2.0";
-const defaultSpOptions = { priority: Array(6).fill("0") };
-const optionValueList = [0, 1, 2, 3, 4, 5, 6, 50, 99];
-
 const AppContext = React.createContext();
+
+const version = "2.1";
+const spClasses = ["season", "type", "colour", "scale"];
+const optionValueList = [0, 1, 2, 3, 4, 5, 6, 50, 99];
+// const defaultSpOptions = Array(6).fill("");
 
 const getStoredData = (name) => {
   let storedVersion = localStorage.getItem("azur_version");
@@ -25,6 +26,22 @@ const getStoredData = (name) => {
   }
 };
 
+const getDefaultSpOptions = (spClasses) => {
+  const length = 6;
+  let spOptions = [];
+  for (let index = length; index > 0; index--) {
+    let tempOption = {
+      enabled: false,
+      tier: index,
+      conditions: spClasses.map((item) => {
+        return { name: item, value: "0" };
+      }),
+    };
+    spOptions.push(tempOption);
+  }
+  return spOptions;
+};
+
 const AppProvider = ({ children }) => {
   const [options, setOptions] = useState(
     getStoredData("azur_options")
@@ -39,7 +56,7 @@ const AppProvider = ({ children }) => {
   const [specialOptions, setSpecialOptions] = useState(
     getStoredData("azur_sp_options")
       ? getStoredData("azur_sp_options")
-      : defaultSpOptions
+      : getDefaultSpOptions(spClasses)
   );
   const [projects, setProjects] = useState(
     getStoredData("azur_projects")

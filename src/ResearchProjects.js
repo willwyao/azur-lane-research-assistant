@@ -1,5 +1,4 @@
 import React from "react";
-import defaultProjects from "./defaultProjects.json";
 import { useGlobalContext } from "./context";
 
 const getOptionIdList = (attributes) => {
@@ -98,13 +97,34 @@ const generateProjectLabel = (attributes, storedOptions, defaultLabel) => {
   }
 };
 
+const getFilterProjectsByAttrs = (projects, attrs) => {
+  let filteredProjects = projects;
+  attrs.forEach((attr) => {
+    const { name, value } = attr;
+    if (value === "0") {
+      return;
+    } else {
+      if (name === "cost") {
+        filteredProjects = filteredProjects.filter((project) =>
+          project.attributes[name].includes(value)
+        );
+      } else {
+        filteredProjects = filteredProjects.filter(
+          (project) => project.attributes[name] === value
+        );
+      }
+    }
+  });
+  return filteredProjects;
+};
+
 const ResearchProjects = () => {
-  const { options, specialOptions } = useGlobalContext();
+  const { options, specialOptions, projects } = useGlobalContext();
   let tiers = [];
   let currentTier = [];
   let currentValue = 0;
 
-  let projects = defaultProjects.map((project) => {
+  let outputProjects = projects.map((project) => {
     const finalValue = getProjectValue(project.attributes, options);
     const projectLabel = generateProjectLabel(
       project.attributes,
@@ -122,18 +142,26 @@ const ResearchProjects = () => {
   });
 
   //apply special priority settings
-  projects.forEach((project) => {
-    const spPriorityIndex = specialOptions.priority.indexOf(project.id);
-    if (spPriorityIndex !== -1) {
-      project.value = (spPriorityIndex + 1) * 1000;
+  specialOptions.forEach((spOption) => {
+    const { enabled, tier, conditions } = spOption;
+    if (enabled) {
+      const filteredProjectIds = getFilterProjectsByAttrs(
+        outputProjects,
+        conditions
+      ).map((item) => item.id);
+      outputProjects.forEach((project) => {
+        if (filteredProjectIds.includes(project.id)) {
+          project.value = 1000 * (7 - tier);
+        }
+      });
     }
   });
 
   //sort projects' list as DESC
-  projects.sort((a, b) => b.value - a.value);
+  outputProjects.sort((a, b) => b.value - a.value);
 
   //put projects into different tiers
-  projects.forEach((project) => {
+  outputProjects.forEach((project) => {
     if (currentValue !== project.value) {
       currentTier = [];
       currentTier.push(project);
@@ -155,7 +183,7 @@ const ResearchProjects = () => {
                 return (
                   <div className="project col-sm-6 col-lg-4" key={index}>
                     <div className={`project-inner bg-${project.colour}`}>
-                      <span>#{project.id}</span>
+                      {/* <span>#{project.id}</span> */}
                       <span className="project-name">{project.name}:</span>
                       <span className="project-value">{project.value}</span>
                     </div>
