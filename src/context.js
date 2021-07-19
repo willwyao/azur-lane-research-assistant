@@ -5,7 +5,7 @@ import defaultProjects from "./defaultProjects.json";
 
 const AppContext = React.createContext();
 
-const version = "2.1";
+const version = "2.2";
 const spClasses = ["season", "type", "colour", "scale"];
 const optionValueList = [0, 1, 2, 3, 4, 5, 6, 50, 99];
 // const defaultSpOptions = Array(6).fill("");

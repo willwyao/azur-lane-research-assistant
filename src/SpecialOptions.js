@@ -50,7 +50,7 @@ const SpecialOptions = () => {
   return (
     <div className="special-options container">
       <h3>特殊优先级设置</h3>
-      <p>越下方位置优先级越高(编号为三位数字)</p>
+      <p>越下方位置优先级越高</p>
       <form>
         {specialOptions.map((item) => {
           const { enabled, tier, conditions } = item;

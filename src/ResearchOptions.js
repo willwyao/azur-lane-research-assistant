@@ -26,7 +26,7 @@ const ResearchOptions = () => {
   };
 
   return (
-    <div className="container">
+    <div className="container" id="options">
       <h3>优先级设置</h3>
       <form className="row justify-content-between">
         {optionClasses.map((optionClass) => {

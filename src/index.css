@@ -95,3 +95,14 @@ code {
 .sp-option-title {
   text-align: center;
 }
+
+.go-top {
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+}
+
+.go-top-icon {
+  font-size: 3em;
+  color: grey;
+}
