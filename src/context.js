@@ -6,16 +6,16 @@ import defaultProjects from "./defaultProjects.json";
 const AppContext = React.createContext();
 
 const version = "2.2";
+const dataVersion = "2.3";
 const spClasses = ["season", "type", "colour", "scale"];
 const optionValueList = [0, 1, 2, 3, 4, 5, 6, 50, 99];
-// const defaultSpOptions = Array(6).fill("");
 
 const getStoredData = (name) => {
   let storedVersion = localStorage.getItem("azur_version");
   let storedData = localStorage.getItem(name);
   if (storedVersion && storedData) {
     storedData = JSON.parse(localStorage.getItem(name));
-    if (storedVersion === version) {
+    if (storedVersion === dataVersion) {
       return storedData;
     } else {
       localStorage.removeItem(name);
@@ -64,6 +64,119 @@ const AppProvider = ({ children }) => {
       : defaultProjects
   );
 
+  //format stored project
+  const formatProjects = (projects, options) => {
+    return projects.map((project) => {
+      const finalValue = getProjectValue(project, options);
+
+      return {
+        id: project.id,
+        name: project.projectName,
+        value: finalValue,
+        attributes: project.attributes,
+        colour: project.attributes.colour,
+      };
+    });
+  };
+
+  const getProjectValue = (project, storedOptions) => {
+    let finalValue = 0;
+
+    //load option values into each project
+    let projectValueList = getOptionIdList(project).map((optionId) => {
+      return getOptionValue(optionId, storedOptions);
+    });
+
+    //calculate project final value
+    if (projectValueList.indexOf(0) === -1) {
+      return (finalValue = projectValueList.reduce(
+        (accumulator, currentValue) => {
+          return parseInt(accumulator) + parseInt(currentValue);
+        }
+      ));
+    } else {
+      return finalValue;
+    }
+  };
+
+  const generateProjectLabel = (storedProject, storedOptions) => {
+    let season = "";
+    let type = "";
+    let colour = "";
+    let scale = "";
+    let ship = "";
+    let time = "";
+    const { attributes, projectName } = storedProject;
+
+    for (let key in attributes) {
+      switch (key) {
+        case "season":
+          season = getOptionTitle(attributes[key], storedOptions);
+          break;
+        case "type":
+          type = getOptionTitle(attributes[key], storedOptions);
+          break;
+
+        case "colour":
+          colour = getOptionTitle(attributes[key], storedOptions);
+          break;
+
+        case "scale":
+          scale = getOptionTitle(attributes[key], storedOptions);
+          break;
+        case "ship":
+          ship = getOptionTitle(attributes[key], storedOptions).slice(2);
+          break;
+        case "time":
+          time = attributes[key];
+          break;
+
+        default:
+          break;
+      }
+    }
+    if (type === "") {
+      return projectName;
+    } else {
+      return `${season}${colour}${scale}${ship}${type}-${time}H`;
+    }
+  };
+
+  const getOptionTitle = (optionId, storedOptions) => {
+    if (optionId) {
+      return storedOptions.find((option) => option.id === optionId).title;
+    } else {
+      return "";
+    }
+  };
+
+  const getOptionValue = (optionId, storedOptions) => {
+    return storedOptions.find((option) => option.id === optionId).value;
+  };
+
+  const getOptionIdList = (project) => {
+    let optionIdList = [];
+    const { attributes } = project;
+
+    //load options' values
+    for (let key in attributes) {
+      if (key === "cost") {
+        attributes[key].forEach((value) => {
+          optionIdList.push(value);
+        });
+        continue;
+      }
+      if (key === "time") {
+        continue;
+      }
+      if (attributes[key] !== null) {
+        optionIdList.push(attributes[key]);
+      }
+    }
+
+    return optionIdList;
+  };
+
   //load options from an option id array
   const loadOptionsFromClass = (optionClass, options) => {
     return options.filter(
@@ -71,11 +184,21 @@ const AppProvider = ({ children }) => {
     );
   };
 
+  const resetProjects = () => {
+    setProjects(defaultProjects);
+  };
+
+  const deleteProject = (id) => {
+    let newProjects = projects.filter((project) => project.id !== id);
+    setProjects(newProjects);
+  };
+
   useEffect(() => {
     localStorage.setItem("azur_version", version);
     localStorage.setItem("azur_options", JSON.stringify(options));
     localStorage.setItem("azur_sp_options", JSON.stringify(specialOptions));
-  }, [options, specialOptions]);
+    localStorage.setItem("azur_projects", JSON.stringify(projects));
+  }, [options, specialOptions, projects]);
   return (
     <AppContext.Provider
       value={{
@@ -90,6 +213,10 @@ const AppProvider = ({ children }) => {
         setSpecialOptions,
         setProjects,
         loadOptionsFromClass,
+        generateProjectLabel,
+        formatProjects,
+        resetProjects,
+        deleteProject,
       }}
     >
       {children}

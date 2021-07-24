@@ -33,7 +33,7 @@ code {
 
 .projects-container .project .project-inner {
   border-radius: 0.5em;
-  padding: 0.2em;
+  padding: 0.2em 1em;
 }
 .project-inner.bg-41 {
   background-color: #fffe9f;
@@ -109,4 +109,23 @@ code {
 
 select:focus {
   border-color: #c2fbfe;
+}
+
+.editor-unit {
+}
+
+.editor-buttons {
+  text-align: right;
+}
+
+.editor-buttons button {
+  margin-right: 1em;
+  margin-top: 0.2em;
+  margin-bottom: 0.2em;
+  padding-top: 0.2em;
+  padding-bottom: 0.2em;
+}
+
+.editor-buttons button:last-child {
+  margin-right: 0;
 }
