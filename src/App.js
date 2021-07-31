@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import ResearchOptions from "./ResearchOptions";
 import ResearchProjects from "./ResearchProjects";
 import SpecialOptions from "./SpecialOptions";
@@ -8,8 +8,9 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowCircleUp } from "@fortawesome/free-solid-svg-icons";
 
 function App() {
-  const { version, resetProjects } = useGlobalContext();
-  const [enableEditor, setEnableEditor] = useState(false);
+  const { version, resetProjects, enableEditor, setEnableEditor } =
+    useGlobalContext();
+
   return (
     <div className="App">
       <header className="App-header">
@@ -45,12 +46,6 @@ function App() {
             className="editor-switcher btn btn-primary"
           >
             {enableEditor ? "关闭" : "打开"}编辑器
-          </button>
-          <button
-            onClick={resetProjects()}
-            className="editor-switcher btn btn-primary"
-          >
-            重置科研项目
           </button>
         </div>
 

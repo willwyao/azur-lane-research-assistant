@@ -63,6 +63,8 @@ const AppProvider = ({ children }) => {
       ? getStoredData("azur_projects")
       : defaultProjects
   );
+  const [enableEditor, setEnableEditor] = useState(false);
+  const [itemEditor, setItemEditor] = useState("0");
 
   //format stored project
   const formatProjects = (projects, options) => {
@@ -135,15 +137,12 @@ const AppProvider = ({ children }) => {
           break;
       }
     }
-    if (type === "") {
-      return projectName;
-    } else {
-      return `${season}${colour}${scale}${ship}${type}-${time}H`;
-    }
+
+    return `${season}${colour}${scale}${ship}${type}-${time}H`;
   };
 
   const getOptionTitle = (optionId, storedOptions) => {
-    if (optionId) {
+    if (optionId && optionId !== "0") {
       return storedOptions.find((option) => option.id === optionId).title;
     } else {
       return "";
@@ -151,7 +150,11 @@ const AppProvider = ({ children }) => {
   };
 
   const getOptionValue = (optionId, storedOptions) => {
-    return storedOptions.find((option) => option.id === optionId).value;
+    if (optionId && optionId !== "0") {
+      return storedOptions.find((option) => option.id === optionId).value;
+    } else {
+      return 0;
+    }
   };
 
   const getOptionIdList = (project) => {
@@ -194,10 +197,11 @@ const AppProvider = ({ children }) => {
   };
 
   useEffect(() => {
-    localStorage.setItem("azur_version", version);
+    localStorage.setItem("azur_version", dataVersion);
     localStorage.setItem("azur_options", JSON.stringify(options));
     localStorage.setItem("azur_sp_options", JSON.stringify(specialOptions));
     localStorage.setItem("azur_projects", JSON.stringify(projects));
+    console.log(projects);
   }, [options, specialOptions, projects]);
   return (
     <AppContext.Provider
@@ -208,10 +212,14 @@ const AppProvider = ({ children }) => {
         projects,
         optionValueList,
         version,
+        enableEditor,
+        itemEditor,
         setOptions,
         setOptionClasses,
         setSpecialOptions,
         setProjects,
+        setEnableEditor,
+        setItemEditor,
         loadOptionsFromClass,
         generateProjectLabel,
         formatProjects,
