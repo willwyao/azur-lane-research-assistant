@@ -59,7 +59,7 @@ const ItemEditor = () => {
   const inputChange = (e) => {
     const inputName = e.target.name;
     const inputValue = e.target.value.replace(
-      /[^\u4e00-\u9fa5A-Za-z0-9_\.-]/g,
+      /[^\u4e00-\u9fa5A-Za-z0-9_.-]/g,
       ""
     );
 

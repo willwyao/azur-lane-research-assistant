@@ -1,3 +1,6 @@
+Version 3.1 2021-08-02
+Fix minor error
+
 Version 3.0 2021-08-02
 Add project editor to enable updating existing projects or creating new projects.
 

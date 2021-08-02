@@ -8,8 +8,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowCircleUp } from "@fortawesome/free-solid-svg-icons";
 
 function App() {
-  const { version, resetProjects, enableEditor, setEnableEditor } =
-    useGlobalContext();
+  const { version, enableEditor, setEnableEditor } = useGlobalContext();
 
   return (
     <div className="App">
