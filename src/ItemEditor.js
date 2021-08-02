@@ -9,6 +9,7 @@ const ItemEditor = () => {
     itemEditor,
     loadOptionsFromClass,
     setProjects,
+    setItemEditor,
   } = useGlobalContext();
 
   const inputRef = useRef({});
@@ -52,6 +53,7 @@ const ItemEditor = () => {
     }
     console.log("before re-set projects");
     setProjects(newProjects);
+    setItemEditor("0");
   };
 
   const inputChange = (e) => {

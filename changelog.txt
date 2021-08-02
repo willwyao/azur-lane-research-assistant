@@ -1,3 +1,6 @@
+Version 3.0 2021-08-02
+Add project editor to enable updating existing projects or creating new projects.
+
 Version 2.2.1 2021-07-19
 minor UI update.
 

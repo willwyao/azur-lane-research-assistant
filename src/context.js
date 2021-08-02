@@ -5,8 +5,8 @@ import defaultProjects from "./defaultProjects.json";
 
 const AppContext = React.createContext();
 
-const version = "2.2";
-const dataVersion = "2.3";
+const version = "3.0";
+const dataVersion = "3.0";
 const spClasses = ["season", "type", "colour", "scale"];
 const optionValueList = [0, 1, 2, 3, 4, 5, 6, 50, 99];
 
@@ -108,7 +108,7 @@ const AppProvider = ({ children }) => {
     let scale = "";
     let ship = "";
     let time = "";
-    const { attributes, projectName } = storedProject;
+    const { attributes } = storedProject;
 
     for (let key in attributes) {
       switch (key) {

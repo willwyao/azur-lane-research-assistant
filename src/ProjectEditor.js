@@ -26,7 +26,6 @@ const ProjectEditor = () => {
   return (
     <div className="container projects-container ">
       <div className="row">
-        <div className="col"></div>
         <div className="col">
           <button
             onClick={() => resetProjects()}
@@ -34,6 +33,7 @@ const ProjectEditor = () => {
           >
             重置科研项目
           </button>
+          <p>清除自定义项目并恢复默认科研项目</p>
         </div>
         <div className="col">
           <button
@@ -42,8 +42,8 @@ const ProjectEditor = () => {
           >
             添加科研项目
           </button>
+          <p>添加自定义科研项目</p>
         </div>
-        <div className="col"></div>
       </div>
       <div className="row">
         <div className="col">{itemEditor === "new" && <ItemEditor />}</div>
