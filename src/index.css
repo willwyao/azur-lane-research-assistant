@@ -119,12 +119,52 @@ select:focus {
 
 .editor-buttons button {
   margin-right: 1em;
-  margin-top: 0.2em;
-  margin-bottom: 0.2em;
   padding-top: 0.2em;
   padding-bottom: 0.2em;
 }
 
 .editor-buttons button:last-child {
   margin-right: 0;
+}
+
+.editor-switcher {
+  margin-top: 0.2em;
+  margin-bottom: 0.2em;
+}
+
+@media (max-width: 767px) {
+  .editor-buttons button {
+    margin-top: 0.2em;
+    margin-bottom: 0.2em;
+  }
+  .editor-section .btn {
+    margin-top: 0.2em;
+    margin-bottom: 0.2em;
+  }
+}
+
+/* .editor-options {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.editor-options .editor-option {
+  width: 50%;
+} */
+.editor-options .editor-option span,
+.editor-options .editor-option input[type="checkbox"] {
+  margin-right: 0.5em;
+}
+.editor-options .editor-option input[type="text"] {
+  width: 250px;
+}
+.editor-options .editor-option input,
+.editor-options .editor-option select {
+  margin-bottom: 0.2em;
+}
+
+.editor-buttons {
+  margin-top: 0.2em;
+  margin-bottom: 0.2em;
 }

@@ -25,8 +25,11 @@ const ProjectEditor = () => {
 
   return (
     <div className="container projects-container ">
-      <div className="row">
-        <div className="col">
+      <p>
+        小程序已预置了科研三期和四期的主要科研项目，请参考碧蓝航线WIKI来设置科研项目
+      </p>
+      <div className="row mb-1">
+        <div className="col text-center">
           <button
             onClick={() => resetProjects()}
             className="editor-switcher btn btn-primary"
@@ -35,7 +38,7 @@ const ProjectEditor = () => {
           </button>
           <p>清除自定义项目并恢复默认科研项目</p>
         </div>
-        <div className="col">
+        <div className="col text-center">
           <button
             onClick={() => toggleEditor("new")}
             className="editor-switcher btn btn-primary"
@@ -45,9 +48,14 @@ const ProjectEditor = () => {
           <p>添加自定义科研项目</p>
         </div>
       </div>
-      <div className="row">
-        <div className="col">{itemEditor === "new" && <ItemEditor />}</div>
-      </div>
+      {itemEditor === "new" && (
+        <div className="row mb-1">
+          <div className="col">
+            <ItemEditor />
+          </div>
+        </div>
+      )}
+
       {outPutProjects.map((project) => {
         return (
           <div className="row editor-unit mb-1" key={project.id}>

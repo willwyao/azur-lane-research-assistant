@@ -167,6 +167,7 @@ const ItemEditor = () => {
                           <input
                             type="checkbox"
                             name={`editor-project-${key}-${id}`}
+                            id={`editor-project-${key}-${id}`}
                             // checked={currentProject.attributes.cost.includes(
                             //   id
                             // )}

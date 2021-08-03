@@ -5,7 +5,7 @@ import defaultProjects from "./defaultProjects.json";
 
 const AppContext = React.createContext();
 
-const version = "3.1";
+const version = "3.2";
 const dataVersion = "3.0";
 const spClasses = ["season", "type", "colour", "scale"];
 const optionValueList = [0, 1, 2, 3, 4, 5, 6, 50, 99];
@@ -201,7 +201,6 @@ const AppProvider = ({ children }) => {
     localStorage.setItem("azur_options", JSON.stringify(options));
     localStorage.setItem("azur_sp_options", JSON.stringify(specialOptions));
     localStorage.setItem("azur_projects", JSON.stringify(projects));
-    console.log(projects);
   }, [options, specialOptions, projects]);
   return (
     <AppContext.Provider
