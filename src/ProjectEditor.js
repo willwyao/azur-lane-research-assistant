@@ -26,7 +26,14 @@ const ProjectEditor = () => {
   return (
     <div className="container projects-container ">
       <p>
-        小程序已预置了科研三期和四期的主要科研项目，请参考碧蓝航线WIKI来设置科研项目
+        小程序已预置了科研三期和四期的主要科研项目，请参考碧蓝航线WIKI的
+          <a
+            href="https://wiki.biligame.com/blhx/%E7%A7%91%E7%A0%94%E9%A1%B9%E7%9B%AE"
+            target="_blank"
+            rel="noreferrer"
+          >
+            这篇攻略
+          </a>来设置科研项目
       </p>
       <div className="row mb-1">
         <div className="col text-center">

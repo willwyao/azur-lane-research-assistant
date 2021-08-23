@@ -5,7 +5,7 @@ import defaultProjects from "./defaultProjects.json";
 
 const AppContext = React.createContext();
 
-const version = "3.3";
+const version = "3.3.1";
 const dataVersion = "3.0";
 const spClasses = ["season", "type", "colour", "scale"];
 const optionValueList = [0, 1, 2, 3, 4, 5, 6, 50, 99,7,8,9];

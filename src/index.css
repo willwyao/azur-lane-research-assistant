@@ -12,8 +12,16 @@ code {
     monospace;
 } */
 
+
 .container {
+  padding-bottom: 2em;
+  border-bottom: 1px solid grey;
   margin-bottom: 2em;
+}
+
+.container.no-border{
+  padding-bottom: 0;
+  border-bottom: none;
 }
 
 .option-value {

@@ -17,9 +17,9 @@ function App() {
           碧蓝航线脚本科研助手 <small>v{version}</small>
         </h1>
       </header>
-      <div className="container">
+      <div className="container no-border">
         <p>
-          本程序基于“雨点航线”开发，用于计算科研项目在脚本内的优先级。首先调整优先级的数值，然后查看页面下方的优先级计算结果。反复调整各个优先级的设置直到出现自己想要的科研排名结果，然后将设置手动录入到“雨点航线”中。
+          本程序基于“雨点航线”开发，用于计算科研项目在脚本内的优先级。由于脚本会选取优先级最高的项目，因此需要把自己想做的项目的优先级尽量调高。小程序会根据优先级设置计算出科研项目在脚本内的分数，使用时首先调整优先级的数值，然后查看页面下方的<strong>优先级计算结果</strong>。反复调整各个优先级的设置直到出现自己想要的科研排名结果，然后将设置手动录入到“雨点航线”中。
           <strong>计算结果仅供参考，以实际脚本运行结果为准。</strong>
           请根据自身的需要调整科研项目的优先级，科研项目的选取可以参考碧蓝航线WIKI的
           <a
@@ -40,6 +40,7 @@ function App() {
       <div className="section editor-section">
         <div className="section-header container">
           <h3>科研项目编辑器</h3>
+          <p>预置科研项目已包括3期，4期主流项目。一般无需设置，除非有特殊需求。</p>
           <button
             onClick={() => setEnableEditor(!enableEditor)}
             className="editor-switcher btn btn-primary"

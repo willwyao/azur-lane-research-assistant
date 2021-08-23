@@ -66,7 +66,7 @@ const ResearchProjects = () => {
   });
 
   return (
-    <div className="container">
+    <div className="container no-border">
       <h3>优先级计算结果</h3>
       <div className="projects-container ">
         {tiers.map((tier, index) => {
