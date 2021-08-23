@@ -5,7 +5,7 @@ import defaultProjects from "./defaultProjects.json";
 
 const AppContext = React.createContext();
 
-const version = "3.2.1";
+const version = "3.3";
 const dataVersion = "3.0";
 const spClasses = ["season", "type", "colour", "scale"];
 const optionValueList = [0, 1, 2, 3, 4, 5, 6, 50, 99,7,8,9];
@@ -221,6 +221,7 @@ const AppProvider = ({ children }) => {
         setItemEditor,
         loadOptionsFromClass,
         generateProjectLabel,
+        getOptionValue,
         formatProjects,
         resetProjects,
         deleteProject,

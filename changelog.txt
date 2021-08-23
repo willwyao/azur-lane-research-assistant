@@ -1,3 +1,6 @@
+Version 3.3 2021-08-23
+Special options updates
+
 Version 3.2 2021-08-03
 Minor UI update
 

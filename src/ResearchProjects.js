@@ -23,7 +23,7 @@ const getFilterProjectsByAttrs = (projects, attrs) => {
 };
 
 const ResearchProjects = () => {
-  const { options, specialOptions, projects, formatProjects } =
+  const { options, specialOptions, projects, formatProjects, getOptionValue } =
     useGlobalContext();
   let tiers = [];
   let currentTier = [];
@@ -42,6 +42,9 @@ const ResearchProjects = () => {
       outputProjects.forEach((project) => {
         if (filteredProjectIds.includes(project.id)) {
           project.value = 1000 * (7 - tier);
+          if(project.attributes.ship){
+            project.value = project.value + getOptionValue(project.attributes.ship,options);
+          }
         }
       });
     }

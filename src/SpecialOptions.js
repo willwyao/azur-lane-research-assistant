@@ -52,6 +52,10 @@ const SpecialOptions = () => {
       <h3>特殊优先级设置</h3>
       <p>越下方位置优先级越高</p>
       <form>
+        <div className="sp-option mb-2">
+          <input type="checkbox" checked='checked' readonly />
+          <label className="mr-2">同一组绝对优先出现多个待选项时额外再比人物分数</label>
+        </div>
         {specialOptions.map((item) => {
           const { enabled, tier, conditions } = item;
           return (
